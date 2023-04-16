@@ -40,5 +40,15 @@ class Pasajero {
         return $this->telefono;
     }
     
+    /** Método toString, Devuelve una cadena de caracteres con la información de un pasajero
+     * @return STRING
+     */
+    public function __toString() {
+        $salida = "Nombre: " . $this->getNombre() . "\n";
+        $salida .= "Apellido: " . $this->getApellido() . "\n";
+        $salida .= "Número de documento: " . $this->getNDocumento() . "\n";
+        $salida .= "Número de teléfono: " . $this->getTelefono() . "\n";
+        return $salida;
+    }
 }
 ?>

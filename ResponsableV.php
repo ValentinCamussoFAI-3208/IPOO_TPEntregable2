@@ -39,5 +39,15 @@ class ResponsableV {
     public function getApellido() {
         return $this->apellido;
     }
+    /** Método toString, muestra los datos del representante del viaje
+     * @return STRING
+     */
+    public function __toString() {
+        $salida = "Número de empleado: " . $this->getNumEmpleado() . "\n";
+        $salida .= "Número de licencia: " . $this->getNumLicencia() . "\n";
+        $salida .= "Nombre: " . $this->getNombre() . "\n";
+        $salida .= "Apellido: " . $this->getApellido() . "\n";
+        return $salida;
+    }
 }
 ?>
