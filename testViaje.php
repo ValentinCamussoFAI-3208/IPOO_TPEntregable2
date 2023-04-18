@@ -8,7 +8,7 @@
     // Se crea el objeto responsable
     $responsable = new ResponsableV(0, 0, "", "");
     // Se crea el objeto viaje
-    $viaje = new Viaje("", "", 0);
+    $viaje = new Viaje( 0, "", 0, [], 0, "");
     // Se asigna true a $sigue asi el while se ejecuta 
     $sigue = true;
     // Mientras la variable $sigue sea verdadera se ejecuta el while
@@ -37,7 +37,7 @@
                 echo "Ingrese la cantidad máxima de pasajeros del viaje: ";
                 $maxPasajeros = trim(fgets(STDIN));
                 // Se cargan los datos del viaje
-                $viaje = new Viaje($codigo, $destino, $maxPasajeros, "", 0, "");
+                $viaje = new Viaje($codigo, $destino, $maxPasajeros, [], 0, "");
                 echo "Viaje cargado correctamente.\n";
                 break;
             case 2:

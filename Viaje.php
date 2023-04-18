@@ -10,12 +10,14 @@ class Viaje {
     private $responsable;
 
     // Método constructor
-    public function __construct($codigoViaje, $destinoViaje, $maxPasajerosViaje) {
+    public function __construct($codigoViaje, $destinoViaje, $maxPasajerosViaje, $pasajerosViaje, $cantidadPasajerosViaje , $responsableViaje) {
         $this->codigo = $codigoViaje;
         $this->destino = $destinoViaje;
         $this->maxPasajeros = $maxPasajerosViaje;
+        $this->pasajeros = $pasajerosViaje;
+        $this->cantidadPasajeros = $cantidadPasajerosViaje;
+        $this->responsable = $responsableViaje;
     }
-
     // Métodos set
     public function setCodigo($codigoViaje) {
         $this->codigo = $codigoViaje;
